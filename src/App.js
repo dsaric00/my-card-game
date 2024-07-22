@@ -9,6 +9,7 @@ const App = () => {
   const [players, setPlayers] = useState([]); // Stanje za podatke igrača, inicijalno prazno polje
   const [selectedPlayer, setSelectedPlayer] = useState(null); // Stanje za odabranog igrača, inicijalno null
 
+  //Dohvaćanje podataka
   useEffect(() => {
     // Hook useEffect koji se izvršava nakon prvog renderiranja komponente
     const getPlayers = async () => {

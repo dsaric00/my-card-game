@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 const Sort = ({onSort}) => {
   const [order, setOrder] = useState(''); // Stanje za redoslijed sortiranja, početno postavljeno na 'desc'
 
@@ -21,7 +22,7 @@ const Sort = ({onSort}) => {
       <h1>Control</h1> {/* Naslov forme */}
       <div className="ml-2">
         <button
-          className={"btn btn-primary"} // Klasa 'selected' dodana ako je redoslijed 'asc'
+          className={`btn btn-primary ${order === 'asc' ? 'selected' : ''}`} // Klasa 'selected' dodana ako je redoslijed 'asc'
           type="button"
           onClick={() => handleSort1('asc')} // Postavi redoslijed na 'asc' prilikom klikanja na gumb
         >
@@ -35,7 +36,7 @@ const Sort = ({onSort}) => {
           Descending
         </button>
       </div>
-      <button className="submit btn btn-success" type="submit">
+      <button className="submit btn btn-success ml-2" type="submit">
         Submit
       </button> {/* Gumb za podnošenje forme */}
     </form>

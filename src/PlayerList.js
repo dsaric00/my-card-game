@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const PlayerList = ({ players, onSelect }) => {
   // state varijable 'players' i funkcije 'setPlayers' prazan niz za ažuriranje stanja 
   const [localPlayers, setLocalPlayers] = useState(players);
-
+// ažurira se kada se plaayers promijeni npr asc ili desc redosljed
   useEffect(() => {
     setLocalPlayers(players);
   }, [players]);

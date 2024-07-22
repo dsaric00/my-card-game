@@ -82,7 +82,7 @@ text-align: center;
 }
 
 .selected {
-  background-color: #02346b !important;
+  background-color: red !important;
   color: white;
 }
 

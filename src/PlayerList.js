@@ -30,3 +30,4 @@ const PlayerList = ({ players, onSelect }) => {
 
 // izvoz komponente kako bi se mogla koristit
 export default PlayerList;
+
